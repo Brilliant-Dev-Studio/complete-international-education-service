@@ -1,30 +1,25 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Footer } from "./_components/Footer";
+import { SmoothScroll } from "./_components/SmoothScroll";
 import "./globals.css";
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Complete International Education Service",
-  description: "Complete International Education Service",
+  description:
+    "GED preparation and international university pathways — Complete International Education Service.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${poppins.variable} h-full antialiased`}
-    >
-      
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className="h-full antialiased">
+      <body className="relative min-h-full flex flex-col">
+        <SmoothScroll>
+          {children}
+          <Footer />
+        </SmoothScroll>
+      </body>
     </html>
   );
 }
