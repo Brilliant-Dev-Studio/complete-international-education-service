@@ -316,10 +316,10 @@
 
 :root {
   color-scheme: light;
-  --section-gap: 130px;
-  --section-py: 4rem;
-  --section-py-sm: 5rem;
-  --section-py-lg: 6rem;
+  --section-gap: 32px;
+  --section-py: 3rem;
+  --section-py-sm: 3.5rem;
+  --section-py-lg: 4rem;
   --container-max: 82.5rem;
   --container-inline-start: max(
     1rem,

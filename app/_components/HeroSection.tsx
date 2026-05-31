@@ -39,7 +39,7 @@ export function HeroSection() {
         className="absolute -inset-[12%] will-change-transform"
       >
         <Image
-          src="/IMG_4393.jpg"
+          src="/HerosectionBg.png"
           alt=""
           fill
           priority

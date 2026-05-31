@@ -8,21 +8,21 @@ const EVENTS = [
   {
     date: "June 8, 2025",
     title: "University Pathway Info Session",
-    image: "/hero_about.jpg",
+    image: "/event1.jpg",
     alt: "Students at a university pathway information session",
     objectPosition: "center 20%",
   },
   {
     date: "May 22, 2025",
     title: "Open House — Visit Our Yangon Campus",
-    image: "/IMG_4392.JPG",
+    image: "/event2.jpg",
     alt: "Campus open house at Complete International Education Service",
     objectPosition: "center center",
   },
   {
     date: "Every Saturday, 10 AM",
     title: "Free GED Mock Exam",
-    image: "/hero_about.jpg",
+    image: "/event3.jpg",
     alt: "Students preparing for GED mock examinations",
     objectPosition: "center top",
   },
@@ -66,13 +66,20 @@ export function EventsSection() {
   return (
     <section
       aria-label="Events and activities"
-      className="section-y relative overflow-x-clip bg-cream-soft"
+      className="section-y relative overflow-x-clip bg-cream"
     >
       <div className="mx-auto w-full max-w-330 overflow-visible px-4 sm:px-8">
         <div className="flex items-end justify-between gap-6">
-          <h2 className="max-w-lg text-[clamp(2rem,3.8vw,2.875rem)] font-bold leading-[1.12] tracking-[-0.025em] text-ink">
-            Events &amp; Activities
-          </h2>
+          <div className="max-w-xl">
+            <div className="mb-4 flex items-center gap-3 text-[10.5px] font-semibold tracking-[0.28em] uppercase text-ink/55">
+              <span aria-hidden className="h-px w-8 bg-ink/40" />
+              From the Calendar
+            </div>
+            <h2 className="text-[clamp(2rem,3.8vw,2.875rem)] font-bold leading-[1.05] tracking-tight text-ink">
+              Events &amp;{" "}
+              <span className="italic font-extrabold">Activities</span>
+            </h2>
+          </div>
 
           <div className="hidden shrink-0 items-center gap-2 sm:flex">
             <button
